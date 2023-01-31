@@ -11,28 +11,28 @@
 <body>
     <header>
         <img src="img/logo.svg" alt="Epicode il blog dei developers">
-        <ul id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Articoli</a></li>
-            <li><a href="#">Job</a></li>
-        </ul>
+        <h1>Sviluppo di una pagina web</h1>
+        <h2>Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile
+        </h2>
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articoli</a></li>
+                <li><a href="#">Job</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h1>Sviluppo di una pagina web</h1>
-        <p>Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile
-        </p>
-        <aside> come creare un templete per i post di Mario Rossi - pubblicato il 25/10/2020
 
-        </aside>
         <style>
             table {
-                width: 1000px;
+                width: 100%;
                 text-align: center;
             }
 
             table th,
             table td {
-                border: 100px ; color: black;
+                border: 1px solid #000
             }
         </style>
 
@@ -46,38 +46,61 @@
                     <th>Supporto browsers</th>
                 </tr>
             </thead>
+            <tbody>
 
-            <tr>
-                <th>2000</th>
-                <th>20%</th>
-                <th>17%</th>
-            </tr>
-            <tr>
-                <th>2002</th>
-                <th>35%</th>
-                <th>22%</th>
-            </tr>
-            <tr>
-                <th>2004</th>
-                <th>45%</th>
-                <th>42%</th>
-            </tr>
-            <tr>
-                <th>2008</th>
-                <th>80%</th>
-                <th>51%</th>
-            </tr>
-            <tr>
+                <tr>
+                    <th>2000</th>
+                    <th>20%</th>
+                    <th>17%</th>
+                </tr>
+                <tr>
+                    <th>2002</th>
+                    <th>35%</th>
+                    <th>22%</th>
+                </tr>
+                <tr>
+                    <th>2004</th>
+                    <th>45%</th>
+                    <th>42%</th>
+                </tr>
+                <tr>
+                    <th>2008</th>
+                    <th>80%</th>
+                    <th>51%</th>
+                </tr>
                 <th>2012</th>
                 <th>100%</th>
                 <th>76%</th>
-            </tr>
+
+            </tbody>
         </table>
-        <p> Un test di validificazione può essere fatto da <a href="#">questo sito</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere stati dei veri developers come loro:</p>
-        <video 
-        src="www.youtube.com"> Video Developers
-    </video>
+
+        <aside>
+            come creare un templete per i post di Mario Rossi - pubblicato il 25/10/2020
+
+        </aside>
+        <p> Un test di validificazione potrà essere fatto tramite il <a href="#">tool-online</a> dedicato allo scopo.
+            Una volta ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere stati dei veri developers
+            come loro:
+        </p>
+
+        <video width="800" height="400" controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+        </video>
+
     </main>
+    <footer>
+        <form>
+            <p> Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter.</p>
+
+            <input type="email" name="email" placeholder="Inserisci l'email">
+            <button>Iscriviti!</button>
+        </form>
+    </footer>
+
+
+
 </body>
 
 </html>
