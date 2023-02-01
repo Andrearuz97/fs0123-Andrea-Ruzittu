@@ -1,0 +1,29 @@
+div{
+    text-align: center;
+}
+    
+    
+    #t1{
+        text-align: center;
+        background-color: yellow;
+        font-size: 12px;
+        color: darkgreen;
+    }
+        
+    #t2{
+        text-align: center;
+
+    }
+    #t3{
+        text-align: center;
+    }
+   #t4{
+    text-align: center;
+    color: red;
+    
+   }
+   #t5{
+    text-align: center;
+    color: darkgreen;
+    text-decoration: underline;
+   }
