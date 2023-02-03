@@ -1,0 +1,79 @@
+/*tipografia*/
+body{ color: #393d41;
+    font-size: rem;
+   line-height: px;
+
+
+}
+header{
+    text-align: center;
+}
+
+#logo{
+    text-align: center;
+    background-color: black;
+    padding: auto;
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    color:#25a2c3
+}
+.presentazione{
+    background-image:url(../images/banner.jpg);
+    max-width: 100%;
+    max-height: 200%;
+    text-align: center;
+}
+#bottom{
+    position: relative;
+    background-color:#f04c2f;
+    text-align: center;
+    color: white;
+    font: bold;
+    padding: 10px 20px;
+    border:solid 1px
+}
+.epicodegarantisce{
+    background-color: #f04c2f;
+    color: white;
+    text-align: center;
+  
+}
+.tuttiti h2 {
+    color: #25a2c3;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.tuttiti p{
+    font-size: 1em;
+}
+main{
+    text-align: center;
+    
+}
+main h2{
+    color: #25a2c3;
+    text-align: center;
+}
+main p{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    margin-top: 10px;
+    background-color: #25a2c3;
+    color: white;
+}
+footer h2{
+    font-size: 2em;
+    margin-top: 50px;
+}
+
+
