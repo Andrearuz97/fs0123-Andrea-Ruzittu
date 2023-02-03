@@ -7,6 +7,9 @@ body{ color: #393d41;
 }
 header{
     text-align: center;
+    margin: 1rem,1rem,1rem,1rem;
+  
+    
 }
 
 #logo{
@@ -19,17 +22,17 @@ h1{
     font-size: 2em;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
+   
     font-weight: bold;
     text-align: center;
     color:#25a2c3
 }
 .presentazione{
     background-image:url(../images/banner.jpg);
-    max-width: 100%;
+    max-width:  100%;
     max-height: 200%;
     text-align: center;
+    
 }
 #bottom{
     position: relative;
@@ -44,6 +47,8 @@ h1{
     background-color: #f04c2f;
     color: white;
     text-align: center;
+    margin: 50px;
+   
   
 }
 .tuttiti h2 {
@@ -75,5 +80,7 @@ footer h2{
     font-size: 2em;
     margin-top: 50px;
 }
+    
+
 
 
