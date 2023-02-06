@@ -1,0 +1,17 @@
+h1{
+    color: black;
+    font-size: 4.5rem;
+    text-align: center;
+}
+   
+body{
+    background-color: yellow;
+    border: 0.5rem;
+    border-color: black;
+    border-style:dashed;
+}
+p{
+    font-size: 3rem;
+    color: red;
+    text-align: center;
+}
