@@ -1,4 +1,33 @@
 h1{
-    color: red;
+    color: blue;
     font-size: 3rem;
+    font-family: sans-serif;
+    background-color:red;
+    border: 10rem;
+    padding: 0rem;
+    margin: 0rem;
+  
+
 }
+div {
+    background-color: red;
+    margin: 0rem;
+    border: 0rem;
+    padding: 15rem;
+    text-align: center;    
+    
+    
+}
+p{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: chartreuse;
+    margin: 0rem;
+    padding: 2rem;
+    border: 0rem;
+}
+body{
+    background-color: red;
+}
+
+   
