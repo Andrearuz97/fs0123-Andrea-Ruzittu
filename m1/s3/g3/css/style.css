@@ -1,0 +1,17 @@
+*{
+    background-color: red;
+}
+button{
+    background-color: green;
+    width: 100px;
+  padding: 10px;
+ 
+}
+#display{
+background-color: black;
+}
+text{
+    height: 100px;
+    width: 100px;
+    padding: 100px;
+}
