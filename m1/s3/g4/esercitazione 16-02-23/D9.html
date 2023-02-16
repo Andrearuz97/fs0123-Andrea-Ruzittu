@@ -199,17 +199,17 @@
     */
 
     const changeFooterText = function () {
-        let footerElement = document.querySelector(".footer");
+      let footerElement = document.querySelector(".footer");
 
-        footerElement.addEventListener("click", function () {
-          let randomColor = Math.floor(Math.random() * 16777215).toString(16);
-          footerElement.style.color = "#" + randomColor;
-        });
-      };
-      changeFooterText();
+      footerElement.addEventListener("click", function () {
+        let newText = "Nuovo testo del footer #" + Math.floor(Math.random() * 100);
+        footerElement.innerText = newText;
+      });
+    };
+
+    changeFooterText();
 
 
-    
 
     /* ESERCIZIO 11
      Aggiungi un event listener al campo di testo nella pagina e fai in modo che dopo ogni lettera il suo valore venga mostrato in console.
@@ -223,8 +223,9 @@
     */
 
     window.onload = function () {
-      //
+      alert('Benvenuto Andrea :)');
     }
+
   </script>
 </body>
 
