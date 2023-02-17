@@ -153,22 +153,22 @@ console.log(whatDayIsIt());
       values: [3, 3, 4]
   }
 */
-function rollTheDices(num) {
-  let sum = 10;
-  let values = [4,6,8,3,7];
+function rollTheDices(numRolls) {
+  const results = {
+    sum: 0,
+    values: []
+  };
 
-  for (let i = 10; i < num; i++) {
+  for (let i = 0; i < numRolls; i++) {
     const roll = dice();
-    sum += roll;
-    values.push(roll);
+    results.sum += roll;
+    results.values.push(roll);
   }
 
-  return {
-    sum,
-    values
-  };
+  return results;
 }
-console.log(rollTheDices);
+const rolls = rollTheDices();
+console.log(rolls);
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
@@ -220,6 +220,7 @@ console.log(result);
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
 
+
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
@@ -254,30 +255,67 @@ console.log(result);
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
-
+function selezionaContainer() {
+  return document.getElementById("container");
+}
+let container = selezionaContainer();
+console.log(container); 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+function selezionaTd() {
+  return document.getElementsByTagName("td");
+}
+const tds = selezionaTd();
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
-*/
-
+*/ 
+function stampaTestoTd() {
+  const tds = document.getElementsByTagName("td");
+  for (let i = 0; i < tds.length; i++) {
+    console.log(tds[i].textContent);
+  }
+}
+stampaTestoTd();
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
-
+function aggiungiBackgroundRossoAiLink() {
+  const links = document.getElementsByTagName("a");
+  for (let i = 0; i < links.length; i++) {
+    links[i].style.backgroundColor = "red";
+  }
+}
+aggiungiBackgroundRossoAiLink();
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
+function aggiungiElementoLista() {
+  const myList = document.getElementById("myList");
+  myList.insertAdjacentHTML("beforeend", "<li>Questo è il nuovo elemento</li>");
+}
+aggiungiElementoLista();
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
-
+function svuotaLista() {
+  const myList = document.getElementById("myList");
+  myList.innerHTML = "";
+}
+svuotaLista();
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+function aggiungiClasse() {
+  const rows = document.getElementsByTagName("tr");
+  for (let i = 0; i < rows.length; i++) {
+    rows[i].classList.add("test");
+  }
+}
+aggiungiClasse();
+
 
 // [EXTRA] JS Avanzato
 
@@ -292,6 +330,16 @@ console.log(result);
   ***
 
 */
+function halfTree (height) {
+  for (let i = 1; i <= height; i++) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+      row += "*";
+    }
+    console.log(row);
+  }
+}
+halfTree(3);
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
